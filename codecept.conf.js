@@ -13,7 +13,7 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'http://www.youtube.com',
+      url: 'https://github.com/',
       show: true
     }
   },
