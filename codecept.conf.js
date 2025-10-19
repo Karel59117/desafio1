@@ -13,17 +13,30 @@ exports.config = {
   helpers: {
     Playwright: {
       browser: 'chromium',
-      url: 'https://github.com/',
-      show: true
-    }
+      url: 'https://www.youtube.com',
+      show: true,
+    },
+    
   },
+
   include: {
-    I: './steps_file.js'
+    I: './steps_file.js',
+
   },
+
+  gherkin: {
+
+    features: "./features/*.feature",
+    
+  },
+
   plugins: {
     htmlReporter: {
       enabled: false
     }
+
   },
-  name: 'framework-prueba'
-}
+
+  name: 'framework-prueba',
+
+};
