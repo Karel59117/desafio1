@@ -2,7 +2,7 @@ const { USER_EMAIL, USER_PASSWORD } = require("./credenciales");
 
 Feature('login');
 
-Scenario('login en YouTube',  ({ I }) => {
+Scenario('login en GitHub',  ({ I }) => {
     I.amOnPage("/");
     I.click("//a[contains(text(),'Sign in')]");
     I.wait(3);
